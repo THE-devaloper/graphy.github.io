@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Shadows+Into+Light&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+html,body{
+    overflow-x: hidden;
+    background-color: black;
+}
+.dot-main-container{
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: max-content;
+    height: max-content;
+    right: 0;
+}
+.dot-container{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(0,0,0,0.6);
+}
+.dot-container a{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    color: white;
+    border: 0.14rem solid;
+    margin: 0 0.7rem;
+    cursor: pointer;
+}
+.dot1.show , .dot2.show ,.dot3.show{
+    background-color: white;
+    transition: 300ms;
+}
+.page1,.page2,.page3,.page4,.page5{
+    
+    width: 100vw;
+    height: 100vh;
+}
+.page1{
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+    border-bottom: 0.06rem solid;
+}
+
+.logo{
+    font-size: 8rem;
+    font-weight: normal;
+    font-family: 'Shadows Into Light', cursive;
+}
+.page1 p{
+    margin-top: 1rem;
+}
+
+.page2{
+    border-bottom: 0.06rem solid;
+    display: grid;
+    grid-template-rows: 12% 3% 85%;
+    background-color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+.search-bar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar-container input{
+    margin: 0 2rem;
+}
+.input1{
+    outline: none;
+    border: 0.2rem solid;
+    background: white;
+    border-radius: 20px;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+.input1::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+.input2{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 3rem;
+	height: 3rem;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: 0.2rem solid black;
+    border-radius: 20%;
+}
+.input3{
+    background-color: black;
+    padding: 0.6rem 2rem;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.count-text{
+    color: black;
+    bottom: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.result-container{
+    width: max-content;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+    padding: 2rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+.result-container::-webkit-scrollbar{
+    background-color: white;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.result-container::-webkit-scrollbar-thumb{
+    background-color: black;
+    width: 0.2rem;
+    height: 0.4rem;
+}
+.result-container::-webkit-scrollbar-button{
+    background-color: white;
+    width: 0.2rem;
+    color: white;
+    height: 0.5rem;
+}
+.result-container a{
+    background-color: aqua;
+    width: 10rem;
+    height: 10rem;
+    background: dodgerblue no-repeat center;
+    background-size:cover;
+    cursor: pointer;
+}
+.page3{
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    padding: 2rem;
+}
+.translation-text{
+    display: grid;
+    grid-template-rows: 60% 40%;
+    pointer-events: none;
+}
+.translation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+.about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0 4rem;
+    text-align: center;
+    pointer-events: none;
+}
+.logo2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5.2rem;
+    pointer-events: none;
+}
+.translation{
+    font-size: 1rem;
+    margin: 0.2rem 0;
+    pointer-events: none;
+}
+.document-container{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.page3 h1{
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    pointer-events: none;
+}
+
+.document-container div p{
+    max-width: 18rem;
+    text-align: justify;
+    font-size: 1rem;
+}
+.final-text{
+    font-size: 0.9rem;
+    position: relative;
+    top: 60%;
+    pointer-events: none;
+}
+@media only screen and (max-width: 600px) 
+  {
+    
+    
+    
+    .logo{
+        font-size: 6rem;
+        
+    }
+   
+    
+    .page2{
+        grid-template-rows: 35% 5% 60%;
+    }
+    .search-bar-container{
+        width: 100vw;
+        flex-direction: column;
+    }
+    .search-bar-container input{
+        margin: 1rem 0;
+    }
+    .input1{
+        padding: 0.8rem;
+    }
+   
+    
+    .input3{
+        
+        font-size: 1rem;
+       
+    }
+   
+    .result-container{
+        width: max-content;
+        height: 95%;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        display: grid;
+        grid-template-columns: 5rem 5rem 5rem;
+        padding: 2rem;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        color: black;
+        font-size: 2rem;
+    }
+    
+    .result-container a{
+        max-width: 5rem;
+        max-height: 5rem;
+        background-size:cover;
+        color: black;
+    }
+    .page3{
+        background-size: cover;
+        display: block;
+        padding: 1rem;
+        height: max-content;
+    }
+    .translation-text{
+        display: grid;
+        grid-template-rows: 60% 40%;
+        margin-bottom: 1rem;
+    }
+    .translation-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-text{
+        
+        padding: 0 0rem;
+     
+        margin-top: 1rem;
+    }
+    .logo2{
+        font-size: 2rem;
+    }
+    .translation{
+        margin: 0 0;
+    }
+    .document-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .page3 h1{
+        font-weight: normal;
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    .dot-main-container div{
+        margin-bottom: 1rem;
+    }
+    .document-container div p{
+        max-width: 80vw;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .final-text{
+        font-size: 0.8rem;
+        margin-top: 2rem;
+        top: 0%
+       ;
+    }
+
+  } 
+
+
